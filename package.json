@@ -1,0 +1,21 @@
+{
+  "name": "touch-demo",
+  "version": "0.0.0",
+  "description": "demo of a responsive touch based web-app with hammerjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "index.js"
+  },
+  "repository": "",
+  "author": "",
+  "license": "BSD",
+  "dependencies": {
+    "express": "~3.3.4",
+    "jade": "~0.33.0"
+  },
+  "subdomain": "pyrobot.touch-demo",
+  "engines": {
+    "node": "0.8.x"
+  }
+}

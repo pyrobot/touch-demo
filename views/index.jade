@@ -1,0 +1,35 @@
+extends layout
+
+block style
+  style.
+    html, body {
+      background-color: #777;
+      -moz-user-select: none;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+    }
+
+    [id^="box"] {
+      height: 150px;
+      width: 150px;
+    }
+
+    .selected {
+      border: 2px solid black;
+    }
+
+    .red { background-color: red; }
+    .blue { background-color: blue; }
+    .green { background-color: green; }
+
+
+block content
+  #box1.blue
+
+block bodyScripts
+  script(src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js")
+  //- script(src="//cdnjs.cloudflare.com/ajax/libs/hammer.js/1.0.5/hammer.min.js")
+  script(src="/js/jquery.hammer.min.js")
+  //- script(src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js")
+  //- script(src="//code.angularjs.org/1.1.5/angular-mobile.min.js")
+  script(src="/js/app.js")
